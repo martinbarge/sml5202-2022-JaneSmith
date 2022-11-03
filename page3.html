@@ -30,12 +30,18 @@ title: page 3
 </div> 
 <!--END OUTER DIV-->
 
+<script>
+document.getElementsByTagName("title")[0].addEventListener("load", myFunction);
+function myFunction() {
+document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
+}
+</script>
 
 <script>
 function myFunction() {
+//document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
 let myPhrase = document.getElementById("myTextarea").value;
 document.getElementById('myTrans').innerHTML = myPhrase;
-document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
 }
   
 function googleTranslateElementInit() {
