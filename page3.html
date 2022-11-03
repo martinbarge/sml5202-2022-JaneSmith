@@ -22,9 +22,12 @@ title: page 3
 <div class="row">
   <div class="col-sm-6 p-3 bg-light text-white">
     <div id="google_translate_element" onclick="myTrans()"></div>
-   <textarea rows="3" id="myTextarea" style="width:100%;"></textarea>
+   <textarea rows="3" id="transInput" style="width:100%;"></textarea>
   </div>
-  <div class="col-sm-6 p-3 bg-light text-black translate"><h4 class="notranslate">Translation:</h4><p id="myTrans"></p></div>
+  <div class="col-sm-6 p-3 bg-light text-black translate">
+    <h4 class="notranslate">Translation:</h4>
+    <p id="transOutput"></p>
+  </div>
 </div>
 
 </div> 
@@ -35,8 +38,8 @@ title: page 3
  
 function myTrans() {
 document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
-let myPhrase = document.getElementById("myTextarea").value;
-document.getElementById('myTrans').innerHTML = myPhrase;
+let myPhrase = document.getElementById("transInput").value;
+document.getElementById('transOutput').innerHTML = myPhrase;
 }
   
  
