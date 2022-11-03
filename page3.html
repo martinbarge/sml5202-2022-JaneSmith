@@ -30,23 +30,12 @@ title: page 3
 </div> 
 <!--END OUTER DIV-->
 
-<!--
-<button onclick="changePageTitle()" class="notranslate">Change Page Title</button>
-      
-    <script>
-        function changePageTitle() {
-            newPageTitle = 'The title has changed!';
-            document.title = newPageTitle;
-        }
-    </script>
--->
-
 
 <script>
 function myFunction() {
 let myPhrase = document.getElementById("myTextarea").value;
 document.getElementById('myTrans').innerHTML = myPhrase;
-document.title = 'Page 3';
+document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
 }
   
 function googleTranslateElementInit() {
