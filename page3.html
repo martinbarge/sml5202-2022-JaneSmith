@@ -13,7 +13,7 @@ title: page 3
 
 
 <!--START OUTER DIV-->
-<div class="notranslate" onload="pageLoad()">  
+<div class="notranslate">  
 <h1>Translation Example</h1>
 <p>This page contains a customised version of Google Translate, for students to translate items they wish to. It's a bit experimental, so try it out.</p>
 <p>Note: The basic code for Google Translate will translate the entire page. So we have to set up some form fields and block the translation from applying to the whole page.</p>
@@ -21,7 +21,7 @@ title: page 3
 <p>Enter your phrase and choose a language:</p>
 <div class="row">
   <div class="col p-3 bg-light text-white">
-    <div id="google_translate_element" onclick="myFunction()"></div>
+    <div id="google_translate_element" onclick="myTrans()"></div>
    <textarea rows="3" id="myTextarea" style="width:100%;"></textarea>
   </div>
   <div class="col p-3 bg-light text-black translate"><h4 class="notranslate">Translation:</h4><p id="myTrans"></p></div>
@@ -32,11 +32,8 @@ title: page 3
 
 
 <script>
-function pageLoad() {
-document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");  
-}
  
-function myFunction() {
+function myTrans() {
 document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
 let myPhrase = document.getElementById("myTextarea").value;
 document.getElementById('myTrans').innerHTML = myPhrase;
