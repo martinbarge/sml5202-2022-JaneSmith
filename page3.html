@@ -13,7 +13,7 @@ title: page 3
 
 
 <!--START OUTER DIV-->
-<div class="notranslate">  
+<div class="notranslate" onload="pageLoad()">  
 <h1>Translation Example</h1>
 <p>This page contains a customised version of Google Translate, for students to translate items they wish to. It's a bit experimental, so try it out.</p>
 <p>Note: The basic code for Google Translate will translate the entire page. So we have to set up some form fields and block the translation from applying to the whole page.</p>
@@ -32,12 +32,17 @@ title: page 3
 
 
 <script>
+function pageLoad() {
+document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");  
+}
+ 
 function myFunction() {
 document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
 let myPhrase = document.getElementById("myTextarea").value;
 document.getElementById('myTrans').innerHTML = myPhrase;
 }
   
+ 
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({ includedLanguages: 'en,es,fr,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
