@@ -35,7 +35,7 @@ title: page 3
 
 <!-- SCRIPTS -->
 
-<!-- SCRIPT 1: FUNCTION TO GET TEXT FROM INPUT TEXT AND DISPLAY AS OUTPUT TEXT TRANSLATED -->
+<!-- SCRIPT 1: FUNCTIONS TO GET TEXT FROM INPUT TEXT AND DISPLAY AS OUTPUT TEXT TRANSLATED. THEN CALL TO GOOGLE TRANSLATE BUTTON HANDLER -->
 
 <script> 
 function myTrans() {
@@ -44,18 +44,16 @@ let myPhrase = document.getElementById("transInput").value;
 document.getElementById('transOutput').innerHTML = myPhrase;
 }
   
-<!-- SCRIPT 2: GOOGLE TRANSLATE BUTTON EVENT HANDLERS -->
-  
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({ includedLanguages: 'en,es,fr,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 </script>
 
-<!-- SCRIPT 3: LINK TO GOOGLE TRANSLATION FUNCTION SCRIPT  -->
+<!-- SCRIPT 2: LINK TO GOOGLE TRANSLATION FUNCTION SCRIPT  -->
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<!-- SCRIPT 4: FUNCTION TO ENSURE PAGE TITLE IN BROWSER TAB DOES NOT TRANSLATE WHEN PAGE LOADS -->
+<!-- SCRIPT 3: FUNCTION TO ENSURE PAGE TITLE IN BROWSER TAB DOES NOT TRANSLATE WHEN PAGE LOADS -->
 
 <script>
   document.addEventListener("DOMContentLoaded", (event) => {
