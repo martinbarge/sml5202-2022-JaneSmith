@@ -21,7 +21,7 @@ title: page 3
 <!-- SET UP TRANSLATION FIELDS IN TWO COLUMNS: TEXTAREA (transInput) IN LEFT COL; OUTPUT (transOutput) IN paragraph in RIGHT COL -->
   <div class="row">
   <div class="col-sm-6 p-3 bg-light text-white">
-    <div id="google_translate_element" onclick="myTrans()"></div>
+    <div id="google_translate_element"></div>
    <textarea rows="5" id="transInput" style="width:100%;"></textarea>
   </div>
   <div class="col-sm-6 p-3 bg-light text-black translate">
@@ -37,6 +37,9 @@ title: page 3
 <!-- SCRIPT 1: FUNCTIONS TO GET TEXT FROM INPUT TEXT AND DISPLAY AS OUTPUT TEXT TRANSLATED. THEN CALL TO GOOGLE TRANSLATE BUTTON HANDLER -->
 
 <script> 
+var x = document.getElementById("google_translate_element");
+x.addEventListener("click", myTrans);
+ 
 function myTrans() {
 document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
 let myPhrase = document.getElementById("transInput").value;
