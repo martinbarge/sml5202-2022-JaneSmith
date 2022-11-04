@@ -18,7 +18,7 @@ title: page 3
 <p>Note: The basic code for Google Translate will translate the entire page. So we have to set up some form fields and block the translation from applying to the whole page.</p>
 <p>Enter your phrase and choose a language:</p>
 
-<!-- SET UP TRANSLATION FIELDS IN TWO COLUMNS: TEXTAREA (INPUT BOX) IN LEFT COL; OUTPUT (P) IN RIGHT COL -->
+<!-- SET UP TRANSLATION FIELDS IN TWO COLUMNS: TEXTAREA (transInput) IN LEFT COL; OUTPUT (transOutput) IN paragraph in RIGHT COL -->
   <div class="row">
   <div class="col-sm-6 p-3 bg-light text-white">
     <div id="google_translate_element" onclick="myTrans()"></div>
@@ -34,7 +34,6 @@ title: page 3
 <!--END OUTER DIV-->
 
 <!-- SCRIPTS -->
-
 <!-- SCRIPT 1: FUNCTIONS TO GET TEXT FROM INPUT TEXT AND DISPLAY AS OUTPUT TEXT TRANSLATED. THEN CALL TO GOOGLE TRANSLATE BUTTON HANDLER -->
 
 <script> 
@@ -60,3 +59,5 @@ function googleTranslateElementInit() {
     document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
   });
 </script>
+
+<!-- END OF SCRIPTS -->
