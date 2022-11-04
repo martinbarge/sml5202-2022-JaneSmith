@@ -11,15 +11,15 @@ title: page 3
   </ol>
 </nav>
 
-
-<!--START OUTER DIV-->
+<!--START OUTER DIV TO WRAP PAGE TEXT CONTENT AND SET IT NOT TO TRANSLATE -->
 <div class="notranslate">  
 <h1>Translation Example</h1>
 <p>This page contains a customised version of Google Translate, for students to translate items they wish to. It's a bit experimental, so try it out.</p>
 <p>Note: The basic code for Google Translate will translate the entire page. So we have to set up some form fields and block the translation from applying to the whole page.</p>
-
 <p>Enter your phrase and choose a language:</p>
-<div class="row">
+
+<!-- SET UP TRANSLATION FIELDS IN TWO COLUMNS: TEXTAREA (INPUT BOX) IN LEFT COL; OUTPUT (P) IN RIGHT COL -->
+  <div class="row">
   <div class="col-sm-6 p-3 bg-light text-white">
     <div id="google_translate_element" onclick="myTrans()"></div>
    <textarea rows="5" id="transInput" style="width:100%;"></textarea>
@@ -29,31 +29,36 @@ title: page 3
     <p id="transOutput"></p>
   </div>
 </div>
-
-</div> 
+<!-- END TRANSLATION FIELDS AREA -->
+</div>
 <!--END OUTER DIV-->
 
+<!-- SCRIPTS -->
 
-<script>
- 
+<!-- SCRIPT 1: FUNCTION TO GET TEXT FROM INPUT TEXT AND DISPLAY AS OUTPUT TEXT TRANSLATED -->
+
+<script> 
 function myTrans() {
 document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
 let myPhrase = document.getElementById("transInput").value;
 document.getElementById('transOutput').innerHTML = myPhrase;
 }
   
- 
+<!-- SCRIPT 2: GOOGLE TRANSLATE BUTTON EVENT HANDLERS -->
+  
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({ includedLanguages: 'en,es,fr,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 </script>
 
+<!-- SCRIPT 3: LINK TO GOOGLE TRANSLATION FUNCTION SCRIPT  -->
+
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- SCRIPT 4: FUNCTION TO ENSURE PAGE TITLE IN BROWSER TAB DOES NOT TRANSLATE WHEN PAGE LOADS -->
 
 <script>
   document.addEventListener("DOMContentLoaded", (event) => {
     document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
   });
 </script>
-
-
