@@ -3,3 +3,15 @@
   background-image: linear-gradient(to left, red, blue);
   color:white;
 }
+
+pre {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	overflow: auto;
+	font-size: .875em;
+	padding: 15px;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
