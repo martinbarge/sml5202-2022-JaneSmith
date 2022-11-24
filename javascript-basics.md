@@ -75,10 +75,8 @@ function test1() {
 
 <h3>Explanation</h3>
 <ul>
-<li>This code illustrates a highly useful JavaScript method for accessing the Document Object. JavaScript uses &lsquo;dot syntax&rsquo; to access this:</li>
-</ul>
-<p><code>document.getElementById("demo1").innerHTML = </code></p>
-<ul>
+<li>This code illustrates a highly useful JavaScript method for accessing the Document Object. JavaScript uses &lsquo;dot syntax&rsquo; to access this:<code>document.getElementById("demo1").innerHTML = </code>
+</li>
 <li>Notice the dots. This is a JavaScript method for parsing the document in search of an HTML tag with <code>id="demo1"</code>.</li>
 <li>Once the tag with ID &ldquo;demo1&rdquo; is located, whatever is placed after the = sign is displayed inside the &lt;p&gt; tag of the document.</li>
 </ul>
