@@ -153,10 +153,10 @@ function test4() {
 ```
 
 <h3>Explanation</h3>
-<p> 
-JavaScript provides a core programming construct known as 'if' condition. We can use an ‘if’ condition to check that the text box contains a value.<br>
-Look at the ‘if’ and ‘else’ conditions in the code above: The ‘if’ statement checks whether the variable ‘name’ contains a value. This is done using Boolean NOT operator (!), placed before the variable name. In plain English, this means: ‘if the variable ‘yourName’ is empty (i.e. if !yourName is true), show an alert box.<br>
-The if statement is followed by an else statement, which executes if the first ‘if’ statement is false. In this case, the ‘else’ statement writes the value to the document.
-</p>
+<p> JavaScript provides a core programming construct known as 'if' condition. We can use an ‘if’ condition to check that the text box contains a value.</p>
+<p>Look at the ‘if’ and ‘else’ conditions in the code above: </p>
+<p>The ‘if’ statement checks whether the variable ‘name’ contains a value. This is done using Boolean NOT operator (!), placed before the variable name. In plain English, this means: ‘if the variable ‘yourName’ is empty (i.e. if !yourName is true), show an alert box.</p>
+<p>
+The if statement is followed by an else statement, which executes if the first ‘if’ statement is false. In this case, the ‘else’ statement writes the value to the document.</p>
 
 
