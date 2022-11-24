@@ -16,7 +16,7 @@ pre {
 	border-radius: 4px;
 }
 
-code, kbd, pre, samp {
+code {
     font-family: var(--bs-font-monospace);
     font-size: 1em;
 }
