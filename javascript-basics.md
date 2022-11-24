@@ -29,9 +29,11 @@ function test1() {
 <h3>Explanation</h3>
 
 <p> 
-In the code above, you can see the JavaScript inside the &lt;script&gt; tags. 
-This uses the JavaScript ‘Function’ object and a dialog box object.
-The function is executed by the ‘onclick=’ event handler, assigned to an HTML button.
+<ol>
+<li>In the code above, you can see the JavaScript inside the &lt;script&gt; tags.</li>
+<li>This uses the JavaScript &lsquo;Function&rsquo; object and a dialog box object.</li>
+<li>The function is executed by the &lsquo;onclick=&rsquo; event handler, assigned to an HTML button.</li>
+</ol>
 </p>
 
 <p><a href="https://www.w3schools.com/jsref/met_win_alert.asp">Reference for this script</a></p>
@@ -60,14 +62,14 @@ function test2() {
 ```
 
 <h3>Explanation</h3>
-
-<p> 
-This code illustrates a highly useful JavaScript method for accessing the Document Object.<br>
-JavaScript uses ‘dot syntax’ to access this: <br>
-<span style="font-family:font-family: Courier, monospace;">document.getElementById().innerHTML = </span><br>
-This is a JavaScript method for parsing the document in search of an HTML tag with the id “demo1”.<br>
-Once the tag with ID “demo1” is located, whatever is placed after the = sign is displayed inside the &lt;p&gt; tag of the document.
-</p>
+<ul>
+<li>This code illustrates a highly useful JavaScript method for accessing the Document Object. JavaScript uses &lsquo;dot syntax&rsquo; to access this:</li>
+</ul>
+<p style="padding-left: 60px;"><span style="font-family: font-family: Courier, monospace;">document.getElementById("demo1").innerHTML = </span></p>
+<ul>
+<li>Notice the dots. This is a JavaScript method for parsing the document in search of an HTML tag with the id &ldquo;demo1&rdquo;.</li>
+<li>Once the tag with ID &ldquo;demo1&rdquo; is located, whatever is placed after the = sign is displayed inside the &lt;p&gt; tag of the document.</li>
+</ul>
 
 <p><a href="https://www.w3schools.com/jsref/met_document_getelementbyid.asp">Reference for this script</a></p>
 <hr>
@@ -102,17 +104,15 @@ function test3() {
 
 
 <h3>Explanation</h3>
-<p> 
-An HTML input box with an ID of “inputName” accepts user input. The Button calls the JavaScript function.<br>
-The function gets the value of the input box, using the document object method:<br>
-<span style="font-family:font-family: Courier, monospace;">getElementById().value;</span></br>
-The value is whatever is written in the input box.<br>
-This value is then stored it in a variable (using the key word var) called “yourName”.<br>
-The function then adds the value of the variable after the word “Hello”, using the + operator, and
-writes it to the document.<br>
-Adding two string (word) values together with the ‘+’ operator is known as ‘concatenation’.<br>
-Exercise: Modify the output text so that it adds “How are you?” after the user’s name.
-</p>
+<ul>
+<li>An HTML input box with an ID of &ldquo;inputName&rdquo; accepts user input. The Button calls the JavaScript function.</li>
+<li>The function gets the value of the input box, using the document object method: <span style="font-family: font-family: Courier, monospace;">getElementById().value;</span></li>
+<li>The value is whatever is written in the input box.</li>
+<li>This value is then stored it in a variable (using the key word var) called &ldquo;yourName&rdquo;.</li>
+<li>The function then adds the value of the variable after the word &ldquo;Hello&rdquo;, using the + operator, and writes it to the document.</li>
+<li>Adding two string (word) values together with the &lsquo;+&rsquo; operator is known as &lsquo;concatenation&rsquo;.<br /> Exercise: Modify the output text so that it adds &ldquo;How are you?&rdquo; after the user&rsquo;s name.</li>
+</ul>
+
 
 <hr>
 <p><strong>But what happens if the user doesn't enter a name?</strong></p>
@@ -153,10 +153,13 @@ function test4() {
 ```
 
 <h3>Explanation</h3>
-<p> JavaScript provides a core programming construct known as 'if' condition. We can use an ‘if’ condition to check that the text box contains a value.</p>
-<p>Look at the ‘if’ and ‘else’ conditions in the code above: </p>
-<p>The ‘if’ statement checks whether the variable ‘name’ contains a value. This is done using Boolean NOT operator (!), placed before the variable name. In plain English, this means: ‘if the variable ‘yourName’ is empty (i.e. if !yourName is true), show an alert box.</p>
-<p>
-The if statement is followed by an else statement, which executes if the first ‘if’ statement is false. In this case, the ‘else’ statement writes the value to the document.</p>
+<p>JavaScript provides a core programming construct known as 'if' condition. We can use an &lsquo;if&rsquo; condition to check that the text box contains a value. Look at the &lsquo;if&rsquo; and &lsquo;else&rsquo; conditions in the code above:</p>
+<ul>
+<li>The &lsquo;if&rsquo; statement checks whether the variable &lsquo;name&rsquo; contains a value.</li>
+<li>This is done using Boolean NOT operator (!), placed before the variable name.</li>
+<li>In plain English, this means: &lsquo;if the variable &lsquo;yourName&rsquo; is empty (i.e. if <strong>!yourName</strong> is true), show an alert box.</li>
+<li>The if statement is followed by an else statement, which executes if the first &lsquo;if&rsquo; statement is false.</li>
+<li>In this case, the &lsquo;else&rsquo; statement writes the value to the document.</li>
+</ul>
 
 
