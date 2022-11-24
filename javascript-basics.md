@@ -36,11 +36,11 @@ function test1() {
 
 <p> 
 <ol>
-<li>First we have a button with an ID of "myButton" attached. This button is an HTML object and can be placed anywhere on the page.</li>
-<li>Next, we have our JavaScript code block, inside the &lt;script&gt; tags.</li>
-<li>The first thing the code does is access the object named 'myButton' and attach an event listener to it. The event is "click" and the action performed by the click is the function named 'test1'.</li>
-<li>The test1 function is created using the 'function' keyword. The function is named test1(), and it performs the action enclosed within { ... }. This function performs an 'alert()', which presents a pop-up box.</li>
-<li>Inside the alert() object we have the sentence "Hello! I'm an alert box!", which will display to the user.</li>
+<li>First we have a button with an id <code>id="myButton"</code> attached. This button is an HTML object and can be placed anywhere on the page.</li>
+<li>Next, we have our JavaScript code block, inside the <code>&lt;script&gt;</code> tags.</li>
+<li>The first thing the code does is access the object named 'myButton' and attach an event listener to it: <code>myButton.addEventListener("click", test1);</code>. The event is <code>"click"</code> and the action performed by the click is the function named <code>test1</code>.</li>
+<li>The test1 function is created using the <code>function</code> keyword. The function is named <code>test1()</code>, and it performs the action enclosed within </code>{ ... }</code>. This function performs an <code>alert()</code>, which presents a pop-up box.</li>
+<li>Inside the <code>alert()</code> object we have the sentence "Hello! I'm an alert box!", which will display to the user.</li>
 </ol>
 </p>
 
@@ -77,9 +77,9 @@ function test1() {
 <ul>
 <li>This code illustrates a highly useful JavaScript method for accessing the Document Object. JavaScript uses &lsquo;dot syntax&rsquo; to access this:</li>
 </ul>
-<p style="padding-left: 60px;"><span style="font-family: font-family: Courier, monospace;">document.getElementById("demo1").innerHTML = </span></p>
+<p><code>document.getElementById("demo1").innerHTML = </code></p>
 <ul>
-<li>Notice the dots. This is a JavaScript method for parsing the document in search of an HTML tag with the id &ldquo;demo1&rdquo;.</li>
+<li>Notice the dots. This is a JavaScript method for parsing the document in search of an HTML tag with <code>id="demo1"</code>.</li>
 <li>Once the tag with ID &ldquo;demo1&rdquo; is located, whatever is placed after the = sign is displayed inside the &lt;p&gt; tag of the document.</li>
 </ul>
 
@@ -121,12 +121,12 @@ function test3() {
 
 <h3>Explanation</h3>
 <ul>
-<li>An HTML input box with an ID of &ldquo;inputName&rdquo; accepts user input.</li>
-<li>The function gets the value of the input box, using the document object method: <span style="font-family: font-family: Courier, monospace;">getElementById().value;</span></li>
+<li>An HTML input box <code>input type="text"</code>with an ID, <code>id="inputName"</code> accepts user input.</li>
+<li>The function gets the value of the input box, using the document object method: <code>getElementById().value;</code></li>
 <li>The value is whatever is written in the input box.</li>
-<li>This value is then stored it in a variable (using the key word var) called &ldquo;yourName&rdquo;.</li>
-<li>The function then adds the value of the variable after the word &ldquo;Hello&rdquo;, using the + operator, and writes it to the document.</li>
-<li>Adding two string (word) values together with the &lsquo;+&rsquo; operator is known as &lsquo;concatenation&rsquo;.</li>
+<li>This value is then stored it in a variable (using the key word <code>var</code>) called <code>yourName</code>.</li>
+<li>The function then adds the value of the variable after the word &ldquo;Hello&rdquo;, using the <code>+</code> operator, and writes it to the document.</li>
+<li>Adding two strings (words and letters) together with the <code>+</code> operator is known as &lsquo;concatenation&rsquo;.</li>
 <li>The script then adds the phrase &ldquo;How are you today?&rdquo; after the user&rsquo;s name.</li>
 </ul>
 
@@ -174,13 +174,13 @@ function test4() {
 ```
 
 <h3>Explanation</h3>
-<p>JavaScript provides a core programming construct known as 'if' condition. We can use an <code>if</code> condition to check that the text box contains a value. Look at the &lsquo;if&rsquo; and &lsquo;else&rsquo; conditions in the code above:</p>
+<p>JavaScript provides a core programming construct known as an 'if' condition. We can use an <code>if</code> condition to check that the text box contains a value. Look at the <code>if</code> and <code>else</code> conditions in the code above:</p>
 <ul>
-<li>The &lsquo;if&rsquo; statement checks whether the variable &lsquo;yourName&rsquo; contains a value.</li>
-<li>This is done using Boolean NOT operator (!), placed before the variable name.</li>
-<li>In plain English, this means: &lsquo;if the variable &lsquo;yourName&rsquo; is empty (i.e. if <strong>!yourName</strong> is true), show an alert box.</li>
-<li>The <code>if</code> statement is followed by an <code>else</code> statement, which executes if the first &lsquo;if&rsquo; statement is false (i.e., if <strong>yourName</strong> is not empty).</li>
-<li>In this case, the &lsquo;else&rsquo; statement writes the value to the document.</li>
+<li>The <code>if</code> statement checks whether the variable <code>yourName</code> contains a value.</li>
+<li>This is done using Boolean NOT operator <code>!</code>, placed before the variable name.</li>
+<li>In plain English, this means: &lsquo;if the variable &lsquo;yourName&rsquo; is empty (i.e. if <code>!yourName</code> is true), show an alert box.</li>
+<li>The <code>if</code> statement is followed by an <code>else</code> statement, which executes if the first <code>if</code> statement is false (i.e., if <code>yourName</code> is not empty).</li>
+<li>In this case, the <code>else</code> statement writes the value to the document.</li>
 </ul>
 <hr>
 <p>This is the end of this brief introduction to JavaScript.</p>
