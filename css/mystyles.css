@@ -15,3 +15,8 @@ pre {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
+
+code, kbd, pre, samp {
+    font-family: var(--bs-font-monospace);
+    font-size: 1em;
+}
