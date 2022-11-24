@@ -39,8 +39,8 @@ function test1() {
 <li>First we have a button with an ID of "myButton" attached. This button is an HTML object and can be placed anywhere on the page.</li>
 <li>Next, we have our JavaScript code block, inside the &lt;script&gt; tags.</li>
 <li>The first thing the code does is access the object named 'myButton' and attach an event listener to it. The event is "click" and the action performed by the click is the function named 'test1'.</li>
-<li>The test1 function is created using the 'function' keyword. The function is named test1(), and it's routine is enclosed within { ... }. This function performs an 'alert()', which presents a pop-up box.</li>
-<li>Inside the alert() object we have a sentence to display to the user.</li>
+<li>The test1 function is created using the 'function' keyword. The function is named test1(), and it performs the action enclosed within { ... }. This function performs an 'alert()', which presents a pop-up box.</li>
+<li>Inside the alert() object we have the sentence "Hello! I'm an alert box!", which will display to the user.</li>
 </ol>
 </p>
 
@@ -48,7 +48,7 @@ function test1() {
 <hr>
 
 <h2>2. Write something into a document</h2>
-<p>This example shows how JS can manipulate text on a document</p>
+<p>This example shows how JS can manipulate text on a document.</p>
 <button id="button2">Click this button and watch the text below change.</button>
 <p style="font-weight:bold;" id="demo1">Watch this text change.</p>
 <script>
