@@ -4,6 +4,8 @@ title: JavaScript Basics
 ---
 
 <h1>JavaScript Basics</h1>
+<p>On this page, you can try some very basic JavaScript examples, and read through the code extracts with explanations.</p>
+<p>You can also copy the code extracts from the grey code boxes and try them on your own website.</p>
 
 <h2>1. A Simple Alert Box</h2>
 <p>This example shows a simple alert box when a button is clicked</p>
@@ -31,7 +33,7 @@ function test1() {
 <p> 
 <ol>
 <li>In the code above, you can see the JavaScript inside the &lt;script&gt; tags.</li>
-<li>This uses the JavaScript &lsquo;Function&rsquo; object and a dialog box object.</li>
+<li>This uses the JavaScript &lsquo;Function&rsquo; object, and an 'alert()' object, which presents a pop-up box.</li>
 <li>The function is executed by the &lsquo;onclick=&rsquo; event handler, assigned to an HTML button.</li>
 </ol>
 </p>
@@ -110,7 +112,8 @@ function test3() {
 <li>The value is whatever is written in the input box.</li>
 <li>This value is then stored it in a variable (using the key word var) called &ldquo;yourName&rdquo;.</li>
 <li>The function then adds the value of the variable after the word &ldquo;Hello&rdquo;, using the + operator, and writes it to the document.</li>
-<li>Adding two string (word) values together with the &lsquo;+&rsquo; operator is known as &lsquo;concatenation&rsquo;.<br /> Exercise: Modify the output text so that it adds &ldquo;How are you?&rdquo; after the user&rsquo;s name.</li>
+<li>Adding two string (word) values together with the &lsquo;+&rsquo; operator is known as &lsquo;concatenation&rsquo;.</li>
+<li>The script then adds the phrase &ldquo;How are you today?&rdquo; after the user&rsquo;s name.</li>
 </ul>
 
 
@@ -158,8 +161,9 @@ function test4() {
 <li>The &lsquo;if&rsquo; statement checks whether the variable &lsquo;name&rsquo; contains a value.</li>
 <li>This is done using Boolean NOT operator (!), placed before the variable name.</li>
 <li>In plain English, this means: &lsquo;if the variable &lsquo;yourName&rsquo; is empty (i.e. if <strong>!yourName</strong> is true), show an alert box.</li>
-<li>The if statement is followed by an else statement, which executes if the first &lsquo;if&rsquo; statement is false.</li>
+<li>The if statement is followed by an else statement, which executes if the first &lsquo;if&rsquo; statement is false (i.e., if <strong>yourName</strong> is not empty).</li>
 <li>In this case, the &lsquo;else&rsquo; statement writes the value to the document.</li>
 </ul>
-
-
+<hr>
+<p>This is the end of this brief introduction to JavaScript.</p>
+<hr>
