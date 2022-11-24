@@ -39,7 +39,7 @@ function test1() {
 <li>First we have a button with an id <code>id="myButton"</code> attached. This button is an HTML object and can be placed anywhere on the page.</li>
 <li>Next, we have our JavaScript code block, inside the <code>&lt;script&gt;</code> tags.</li>
 <li>The first thing the code does is access the object named 'myButton' and attach an event listener to it: <code>myButton.addEventListener("click", test1);</code>. The event is <code>"click"</code> and the action performed by the click is the function named <code>test1</code>.</li>
-<li>The test1 function is created using the <code>function</code> keyword. The function is named <code>test1()</code>, and it performs the action enclosed within </code>{ ... }</code>. This function performs an <code>alert()</code>, which presents a pop-up box.</li>
+<li>The test1 function is created using the <code>function</code> keyword. The function is named <code>test1()</code>, and it performs the action enclosed within <code>{ ... }</code>. This function performs an <code>alert()</code>, which presents a pop-up box.</li>
 <li>Inside the <code>alert()</code> object we have the sentence "Hello! I'm an alert box!", which will display to the user.</li>
 </ol>
 </p>
