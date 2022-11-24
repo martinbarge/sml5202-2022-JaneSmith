@@ -4,7 +4,7 @@ title: JavaScript Basics
 ---
 
 <h1>JavaScript Basics</h1>
-<p>On this page, you can try some very basic JavaScript examples, and read through the code extracts with explanations.</p>
+<p>On this page, you can learn three very basic JavaScript examples, and read through the code extracts and explanations.</p>
 <p>You can also copy the code extracts from the grey code boxes and try them on your own website.</p>
 
 <h2>1. A Simple Alert Box</h2>
@@ -47,7 +47,7 @@ function test1() {
 <p><a href="https://www.w3schools.com/jsref/met_win_alert.asp">Reference for this script</a></p>
 <hr>
 
-<h2>2. Write something into a document</h2>
+<h2>2. Writing something into a document</h2>
 <p>This example shows how JS can manipulate text on a document.</p>
 <button id="button2">Click this button and watch the text below change.</button>
 <p style="font-weight:bold;" id="demo1">Watch this text change.</p>
@@ -86,7 +86,7 @@ function test1() {
 <p><a href="https://www.w3schools.com/jsref/met_document_getelementbyid.asp">Reference for this script</a></p>
 <hr>
 
-<h2>3. Extend the above to get user input and output it to the document</h2>
+<h2>3. Extending the above to get user input and output it to the document</h2>
 <p>This example shows how JS can take user input and join it to another text and output it.</p>
 <p>When you enter a name and submit, a message will be displayed underneath.</p>
 
@@ -133,7 +133,7 @@ function test3() {
 
 <hr>
 <p><strong>But what happens if the user doesn't enter a name?</strong></p>
-<p>Yes, that's right, you get a message saying only 'Hello' with no name.</p>
+<p>Try the above example again, without inputting a name. You will see a message saying only 'Hello' with no name.</p>
 <p>We can solve this by making sure the user enters a name:</p>
 
 <p>Enter your name: <input type="text" id="inputName2"><button id="button4">Try it</button></p>
