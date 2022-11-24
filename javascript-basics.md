@@ -4,7 +4,8 @@ title: JavaScript Basics
 ---
 
 <h1>JavaScript Basics</h1>
-<p>On this page, you can learn three very basic JavaScript examples, and read through the code extracts and explanations.</p>
+<p>On this page, we work through three basic JavaScript examples, showing the code extracts and explaining how it works.</p>
+<p>Through these examples, you will learn how to get and respond to user input.</p>
 <p>You can also copy the code extracts from the grey code boxes and try them on your own website.</p>
 
 <h2>1. A Simple Alert Box</h2>
@@ -77,8 +78,8 @@ function test1() {
 <ul>
 <li>This code illustrates a highly useful JavaScript method for accessing the Document Object. JavaScript uses &lsquo;dot syntax&rsquo; to access this:        <code>document.getElementById("demo1").innerHTML = </code>
 </li>
-<li>Notice the dots. This is a JavaScript method for parsing the document in search of an HTML tag with <code>id="demo1"</code>.</li>
-<li>Once the tag with ID &ldquo;demo1&rdquo; is located, whatever is placed after the = sign is displayed inside the &lt;p&gt; tag of the document.</li>
+<li>Notice the dots. The code shows a JavaScript method for parsing the document in search of an HTML tag <code>document.getElementById("demo1")</code> that has an id named "demo1".</li>
+<li>Once the tag with ID &ldquo;demo1&rdquo; is located, the script specifies the phrase that shold be inserted into the element, using <code>innerHTML =</code>. The phrase after the <code> = </code> sign is then displayed inside the <code>&lt;p&gt;</code> tag with <code>id="demo1"</code>.</li>
 </ul>
 
 <p><a href="https://www.w3schools.com/jsref/met_document_getelementbyid.asp">Reference for this script</a></p>
@@ -103,7 +104,9 @@ function test3() {
 
 ```
 
-<p>Enter your name, or any name: <input type="text" id="inputName"><button id="button3">Submit</button></p>
+<p>Enter your name, or any name: <input type="text" id="inputName">
+<button id="button3">Submit</button>
+</p>
 <p>The message will appear here: <span id="output1"></span></p>
 
 <script>
@@ -119,11 +122,11 @@ function test3() {
 
 <h3>Explanation</h3>
 <ul>
-<li>An HTML input box <code>input type="text"</code>with an ID, <code>id="inputName"</code> accepts user input.</li>
-<li>The function gets the value of the input box, using the document object method: <code>getElementById().value;</code></li>
-<li>The value is whatever is written in the input box.</li>
-<li>This value is then stored it in a variable (using the key word <code>var</code>) called <code>yourName</code>.</li>
-<li>The function then adds the value of the variable after the word &ldquo;Hello&rdquo;, using the <code>+</code> operator, and writes it to the document.</li>
+<li>An HTML input box <code>input type="text"</code> with an ID, <code>id="inputName"</code> is used for user input.</li>
+<li>The function gets the value (contents) of the input box, using the document object method: <code>getElementById().value;</code></li>
+  <li>The <code>value</code> is whatever is written in the input box.</li>
+<li>This value of the input box is stored in a variable (using the key word <code>var</code>) named <code>yourName</code>.</li>
+<li>The function then adds the value of the variable after the word &ldquo;Hello&rdquo;, using the <code>+</code> operator, and writes it to the document inside the page element with id "output1".</li>
 <li>Adding two strings (words and letters) together with the <code>+</code> operator is known as &lsquo;concatenation&rsquo;.</li>
 <li>The script then adds the phrase &ldquo;How are you today?&rdquo; after the user&rsquo;s name.</li>
 </ul>
@@ -134,7 +137,9 @@ function test3() {
 <p>Try the above example again, without inputting a name. You will see a message saying only 'Hello' with no name.</p>
 <p>We can solve this by making sure the user enters a name:</p>
 
-<p>Enter your name: <input type="text" id="inputName2"><button id="button4">Try it</button></p>
+<p>Enter your name: <input type="text" id="inputName2">
+  <button id="button4">Try it</button>
+</p>
 <p>The message will appear here: <span id="output2"></span></p>
 <script>
 button4.addEventListener("click", test4); 
@@ -172,7 +177,7 @@ function test4() {
 ```
 
 <h3>Explanation</h3>
-<p>JavaScript provides a core programming construct known as an 'if' condition. We can use an <code>if</code> condition to check that the text box contains a value. Look at the <code>if</code> and <code>else</code> conditions in the code above:</p>
+<p>JavaScript provides a core programming construct known as an 'if / else' condition. We can use an <code>if</code> condition to check that the text box contains a value. Look at the <code>if</code> and <code>else</code> conditions in the code above:</p>
 <ul>
 <li>The <code>if</code> statement checks whether the variable <code>yourName</code> contains a value.</li>
 <li>This is done using Boolean NOT operator <code>!</code>, placed before the variable name.</li>
