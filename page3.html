@@ -41,9 +41,9 @@ var x = document.getElementById("google_translate_element");
 x.addEventListener("click", myTrans);
  
 function myTrans() {
-document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
 let myPhrase = document.getElementById("transInput").value;
 document.getElementById('transOutput').innerHTML = myPhrase;
+document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
 }
   
 function googleTranslateElementInit() {
