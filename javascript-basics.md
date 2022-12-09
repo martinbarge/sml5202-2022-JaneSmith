@@ -186,5 +186,5 @@ function test4() {
 <li>In this case, the <code>else</code> statement writes the value to the document.</li>
 </ul>
 <hr>
-<p>This is the end of this brief introduction to JavaScript.</p>
+<p>This is the end of this brief introduction to JavaScript. If you want to proceed, head over to <a href="js-random.html">my random sentence maker</a> to learn some more JavaScript concepts.</p>
 <hr>
