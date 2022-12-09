@@ -4,6 +4,11 @@
   color:white;
 }
 
+.footer a {
+  color: #cbd5e8;
+  text-decoration: none;
+}
+
 pre {
 	display: block;
 	margin-top: 0;
