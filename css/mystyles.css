@@ -52,7 +52,8 @@ code {
     background-color: #292929;
     border: 1px solid #242424;
     border-radius: 4px;
-    width:50%;
+    /*** width:50%; ***/
+    width: 80%;
 }
 
 .searchForm-input {
@@ -152,11 +153,13 @@ code {
     }
 
     .searchForm-input {
-        width: 300px;
+       /** width: 300px; **/
+	width: 100%;
     }
 
     .searchResults {
-        width: 388px;
+        /** width: 388px; **/
+	width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
