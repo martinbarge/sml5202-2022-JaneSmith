@@ -185,10 +185,11 @@ code {
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 50px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  border-radius: 50%;
 }
 
 .fa:hover {
@@ -300,6 +301,3 @@ code {
   background: #ff6600;
   color: white;
 }
-
-
-
