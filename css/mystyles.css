@@ -1,8 +1,9 @@
 .myBanner {
-  background:#295971; 
-  background-image: linear-gradient(to left, red, blue);
-  color:white;
+    background: #295971;
+    background-image: linear-gradient(to left, #cf1f5b, blue);
+    color: white;
 }
+
 
 .footer a {
   color: #cbd5e8;
