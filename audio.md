@@ -21,7 +21,7 @@ Your browser does not support the audio tag.
 
 ```
 
-<p>Note: If you made the audio file yourself, then the file must be uploaded to your github area, and the link to it pasted into the 'PATH TO FILE' entry shown in the code above. For example, in my example, the path is: https://martinbarge.github.io/demo-site-2021/audio/uk.mp3 .</p>
+<p>Note: If you made the audio file yourself, then the file must be uploaded to your github area, and the link to it pasted into the 'PATH TO FILE' entry shown in the code above. For example, in my example, the path is:<code> https://martinbarge.github.io/demo-site-2021/audio/uk.mp3 </code>.</p>
 <p>Also, try to keep the names of your audio files short, descriptive, single-word and lowercase. You'll notice that my audio file is simply named **uk.mp3**. It makes it so much easier! </p>
 <hr>
 <p id="part2">&nbsp;</p>
