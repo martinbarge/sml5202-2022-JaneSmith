@@ -3,10 +3,12 @@ layout: default
 title: wikipedia
 ---
 
+<h1>Two column page containing a Wikipedia search widget and a Bootstrap accordion.</h1>
+<p>This page illustrates positioning a JavaScript Wikipedia search widget alongside an accordion, using the Bootstrap column layout.</p>
 <div class="row">
  <div class="col-sm-6">
 <h1>A wikipedia search tool</h1>
-
+	 <p>In this first column we have the Wikipeida search tool. <a href="https://martinbarge.github.io/sample-site-sml5202/wikisearch.html">Get the code for this here</a>.</p>
 <header class="searchForm-container">
 <img src="https://image.ibb.co/e6vOFQ/wikipedia.png" alt="Wikipedia Logo">
 <form class="searchForm">
@@ -23,6 +25,8 @@ title: wikipedia
  </div>
 <div class="col-sm-6">
 	<h1>An accordion item</h1>
+	<p>This section shows a Bootstrap Accordion component, which you can easily add to your pages. In this case it's positioned in a column container.</p>
+	<p><a href="https://getbootstrap.com/docs/5.2/components/accordion/">Get the accordion code here</a>.</p>
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
@@ -60,14 +64,15 @@ title: wikipedia
       </div>
     </div>
   </div>
-</div>	
-</div>
-</div>
+</div> <!-- END ACCORDION -->
+</div> <!-- END COLUMN -->
+</div> <!-- END ROW -->
 
 <hr>
 
   
-	  
+<!-- DO NOT EDIT SCRIPT EXCEPT TO CHANGE THE TWO 'en' entries in the wikipedia url to another language -->
+
 <script>
   function handleSubmit(event) {
     // prevent page from reloading when form is submitted
