@@ -1,6 +1,6 @@
 ---
 layout: default
-title: page 3
+title: translate
 ---
 
 <!--START OUTER DIV TO WRAP PAGE TEXT CONTENT AND SET IT NOT TO TRANSLATE -->
@@ -11,53 +11,65 @@ title: page 3
 <p>Enter your phrase and choose a language:</p>
 
 <!-- SET UP TRANSLATION FIELDS IN TWO COLUMNS: TEXTAREA (transInput) IN LEFT COL; OUTPUT (transOutput) IN paragraph in RIGHT COL -->
-  <div class="row">
+<div class="row">
   <div class="col-sm-6 p-3 bg-light text-white">
-     <div id="google_translate_element"></div>
-      <textarea rows="3" id="transInput" style="width:100%;"></textarea>
-     </div>
+    <div id="google_translate_element"></div>
+    <textarea rows="3" id="transInput" style="width:100%;"></textarea>
+  </div>
   <div class="col-sm-6 p-3 bg-light text-black translate">
     <h4 class="notranslate">Translation:</h4>
     <p id="transOutput" style="font-size:120%;"></p>
   </div>
 </div>
 <!-- END TRANSLATION FIELDS AREA -->
-  
+
 <hr>
-  <p><a href="https://raw.githubusercontent.com/martinbarge/sml5202-2022-JaneSmith/main/page3.html">Get the code for this page here.</a></p>  
+<p><a href="https://raw.githubusercontent.com/martinbarge/sml5202-2022-JaneSmith/main/page3.html">Get the code for this page here.</a></p>  
 <hr>
 </div>
-
 <!--END OUTER DIV-->
 
 <!-- SCRIPTS -->
 <!-- SCRIPT 1: FUNCTIONS TO GET TEXT FROM INPUT TEXT AND DISPLAY AS OUTPUT TEXT TRANSLATED. THEN CALL TO GOOGLE TRANSLATE BUTTON HANDLER -->
-
 <script> 
-var x = document.getElementById("google_translate_element");
-x.addEventListener("click", myTrans);
  
-function myTrans() {
-  let myPhrase = document.getElementById("transInput").value;
-  document.getElementById('transOutput').innerHTML = myPhrase;
-  document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
-}
+(function () {
+    window.onpageshow = function(event) {
+        if (event.persisted) {
+            window.location.reload();
+        }
+    };
+})();
   
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({ includedLanguages: 'fr,de,pt,es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
 }
+
+document.addEventListener("DOMContentLoaded", (event) => {
+ 
+  document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
+  
+  var navbar = document.querySelector(".navbar");
+  navbar.classList.add("notranslate");
+  var banner = document.querySelector(".myBanner");
+  banner.classList.add("notranslate");
+  
+  var x = document.getElementById("google_translate_element");
+  x.addEventListener("click", myTrans);
+});
+
+function myTrans() {
+  let myPhrase = document.getElementById("transInput").value;
+  document.getElementById('transOutput').innerHTML = myPhrase;
+  //document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
+}
+  
+  window.onpopstate = function(event) {
+  // Reinitialize your translation widget here
+  googleTranslateElementInit();  
+};
 </script>
 
 <!-- SCRIPT 2: LINK TO GOOGLE TRANSLATION FUNCTION SCRIPT  -->
-
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<!-- SCRIPT 3: FUNCTION TO ENSURE PAGE TITLE IN BROWSER TAB DOES NOT TRANSLATE WHEN PAGE LOADS -->
-
-<script>
-  document.addEventListener("DOMContentLoaded", (event) => {
-    document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
-  });
-</script>
-
 <!-- END OF SCRIPTS -->
